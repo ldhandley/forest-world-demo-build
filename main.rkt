@@ -19,7 +19,10 @@
 (module+ main
 
   (codespells-workspace ;TODO: Change this to your local workspace if different
-   (build-path (current-directory) ".." ".."))
+   (build-path 
+     ;(current-directory) ".." ".."
+     (current-directory)
+     ))
 
   (once-upon-a-time
    #:world (forest-world)
